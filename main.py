@@ -40,5 +40,4 @@ Np = random.randrange(N, M)
 Mp = random.randrange(N, M)
 Kl = random.choices(cl, weights = [Np, Mp], k = 10)
 
-print()
 print("="*30 + "\n결과는...\n\n당신은 가챠를 %s\n\n감사합니다.\n"%Kl[F] + "="*30)

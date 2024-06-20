@@ -21,7 +21,7 @@ while True:
   if N < M:
     break
   else:
-    print("최댓값은 최솟값보다 작아야 합니다. 다시 시도하세요")
+    print("최댓값은 최솟값보다 커야 합니다. 다시 시도하세요")
     continue
     
 while True:

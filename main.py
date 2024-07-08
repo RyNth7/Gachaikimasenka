@@ -1,5 +1,5 @@
 import random
-cl = ["돌린다", "돌리지 않는다"]
+
 while True:
   try:
     N = int(input("최솟값을 입력하세요\n: "))
@@ -35,7 +35,8 @@ while True:
   else:
     print("입력 범위를 초과했습니다. 0~10의 정수를 입력하세요.")
     continue
-    
+
+cl = ["돌린다", "돌리지 않는다"]
 Np = random.randrange(N, M)
 Mp = random.randrange(N, M)
 Kl = random.choices(cl, weights = [Np, Mp], k = 10)

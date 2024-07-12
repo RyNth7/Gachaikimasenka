@@ -1,8 +1,9 @@
+import os
 import random
 
 while True:
   try:
-    N = int(input("최솟값을 입력하세요\n: "))
+    N = int(input("최솟값을 입력하세요.\n"))
   except:
     print("정수가 아닙니다. 다시 시도하세요.")
     continue
@@ -14,7 +15,7 @@ while True:
     
 while True:
   try:
-    M = int(input("최댓값을 입력하세요\n: "))
+    M = int(input("최댓값을 입력하세요.\n"))
   except:
     print("정수가 아닙니다. 다시 시도하세요.")
     continue
@@ -42,3 +43,4 @@ Mp = random.randrange(N, M)
 Kl = random.choices(cl, weights = [Np, Mp], k = 10)
 
 print("="*30 + "\n결과는...\n\n당신은 가챠를 %s\n\n감사합니다.\n"%Kl[F] + "="*30)
+os.system("pause")
